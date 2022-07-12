@@ -1,0 +1,20 @@
+p {
+    color: lightgray;
+}
+.gros{
+    font-size: 24px;
+    font-family: sans-serif;
+    /* font-family: monospace; */
+}
+.gras{
+    font-weight: bold;
+}
+
+/* google fonts */
+.gras {
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-family: "Bebas Neue", cursive;
+}

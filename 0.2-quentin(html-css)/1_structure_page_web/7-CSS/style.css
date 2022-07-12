@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(244, 191, 92);
+}
+
+#para {
+    color: red;
+}
+
+.graph {
+    font-size: 20px;
+}
+
+div {
+    background-color: aqua;
+}
+
+.inline {
+    background-color: blueviolet;
+    color: white;
+}
+
+
+/* selectors multiples */
+h1, p {
+    font-style: italic;
+}
+
+
+/* ciblage précis, h2 inside div */
+div h2 {
+    font-weight: 900;
+}
+div .extrait {
+    color: brown;
+    text-align: center;
+}
+
+/* Différences */
+a .inline => class inline inside a 
+a.inline => cherche a possédant class inline

@@ -1,0 +1,31 @@
+#zoneGauche{
+    background-color: red;
+    /* width: 400px; */
+    /* flex-grow: 1; */
+    width: 50%;
+}
+
+#zoneDroite{
+    background-color: blue;
+    /* width: 400px; */
+    /* flex-grow: 1; */
+    width: 50%;
+}
+
+#zoneBas{
+    background-color: green;
+    width: 800px;
+    height: 70px;
+}
+
+section{
+    display: flex;
+    /* flex-direction: row; pas obligatoire car par défaut le display : flex est automatiquement en row*/
+    width: 800px;
+    height: 530px;
+}
+
+#conteneur{
+    width: 800px;
+    margin: 0 auto 0 auto;
+}

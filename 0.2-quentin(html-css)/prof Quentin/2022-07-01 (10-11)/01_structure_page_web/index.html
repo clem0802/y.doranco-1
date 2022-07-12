@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- 
+    Tout d’abord, nous devrons toujours démarrer une page HTML en précisant le doctype de notre document. Comme son nom l’indique, le doctype sert à préciser le type du document.
+    Faites bien attention à l’écriture du doctype : vous pouvez remarquer que la balise représentant le doctype commence par un point d’exclamation. Ceci est un cas unique.
+    Dans la balise doctype, on va préciser le langage utilisé, à savoir le HTML dans notre cas.
+-->
+<html>
+    <!-- 
+        Après le document, nous devons également mentionner un élément html. 
+        Cet élément est composé de deux balises <html> et </html> et va représenter notre page HTML en soi. On va donc insérer tout le contenu de notre page (et donc les autres éléments) à l’intérieur de celui-ci.
+    -->
+
+    <!-- 
+        A l’intérieur de l’élément html, nous devons à nouveau indiquer deux éléments : head et body.
+
+        L’élément head va contenir des meta informations relatives à la page, c’est-à-dire des informations générales dont la page va avoir besoin pour fonctionner, comme le titre de la page ou encore le type d’encodage utilisé.
+
+        L’élément body va lui contenir tout le contenu « visible » de la page : les textes, images, liens, vidéos, etc.
+    -->
+    <head>
+        <!-- 
+            Nous allons devoir indiquer au moins deux autres éléments à l’intérieur de notre élément head : l’élément title, qui va contenir le titre de la page et un élément meta avec son attribut charset qui va nous permettre de définir l’encodage de la page.
+
+            L’encodage est très important pour que tous nos caractères, notamment les accents, s’affichent normalement dans notre page. Pour nous autres, français, nous utiliserons la valeur utf-8.
+
+            Notez que vous devrez également régler l’encodage de votre éditeur de texte sur utf-8 afin que tous les caractères s’affichent bien par la suite dans votre navigateur.
+        -->
+        <meta charset="UTF-8">
+        <title>Structure Page Web</title>
+    </head>
+    <body>
+
+        <header>
+            <!-- Zone du haut ex: bannière, logo, slogan -->
+        </header>
+
+        <nav>
+            <!-- Zone du menu -->
+        </nav>
+
+        <section>
+            <!-- Zone de contenu : titre, texte, informations du contenu, regroupement thématique de contenu -->
+            <div>
+                <!-- Zone supplémentaire de contenu, l’élément div peut regrouper tout et n’importe quoi, alors que l’élément section a plutôt été pensé pour regrouper du contenu apparenté -->
+            </div>
+            <span>
+				<!-- L’élément span peut regrouper tout et n’importe quoi, il s'agit d'une zone secondaire d'information -->
+			</span>
+        </section>
+        
+        <footer>
+            <!-- Zone du bas ex: liens administratifs, mentions légales, plan du site, CGU, CGV, contact, Copyright ... -->
+        </footer>
+    </body>
+</html>

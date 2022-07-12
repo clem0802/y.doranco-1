@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS - Quentin / 2022.06.28</title>
+        <!-- Pay specially attention to COMMENT NOTES !! in HTML & CSS -->
+
+        <style>
+            p {
+                color: blue;
+                /* color: rgb(red, green, blue); */
+                /* color: rgb(0, 0, 255); */
+                /* color: #0000ff; */
+                font-size: 25px;
+                font-weight: bold;
+            }
+            body {
+                background-color: orange;
+            }
+        </style>
+    
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+        <h1 style="color: green;">J'apprends à utiliser le CSS</h1>
+        <p>1er Paragraphe</p>
+        <p>2ème paragraphe <a href="">voir la suite</a></p>
+        <p id="para" class="graph">3ème paragraphe</p>
+        <p class="graph">4ème paragraphe</p>
+
+        <!-- **************************************************************** -->
+        <!-- élém BLOCK => tjrs retour à la ligne, sans que je mette BR -->
+        <!-- élém BLOCK => des marges sont créés automatiquement -->
+        <!-- h1-h6, div, ul ol li, p, nav, article, section -->
+
+        <div>
+            Je suis BLOCK (Mon backgroud prend toute la largeur de la page)
+        </div>
+
+        <!-- **************************************************************** -->
+        <!-- élém INLINE => ils ne commencent pas sur une nouvelle ligne -->
+        <!-- élém INLINE => ils prennent only la largeur nécessaire -->
+        <!-- span, a, img, button, input, textarea, strong, em, b, i -->
+        <a href="#" class="inline">Je suis INLINE</a>
+        <hr>
+
+        <!-- **************************************************************** -->
+        <!-- élém INLINE peut être inside élém BLOCK  -->
+        <!-- élém BLOCK jamais inside élém INLINE -->
+
+
+        <div>
+            <h2>Mon titre secondaire</h2>
+            <p class="extrait">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam eos expedita itaque? Quis commodi natus non ad, deserunt, magnam beatae harum expedita esse quibusdam pariatur deleniti suscipit architecto. Sit, blanditiis! Ipsa, dignissimos quasi! Assumenda, aliquam itaque consequatur explicabo hic tempore?
+            </p>
+        </div>
+
+        <h2>Mon 2ème titre secondaire</h2>
+
+        
+    </body>
+</html>

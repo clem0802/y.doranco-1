@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Les Balises HTML</title>
+    </head>
+    <body>
+        <!-- Les titres -->
+        <!-- On a 6 niveaux hiérarchique de titres allant de h1 à h6 -->
+        
+        <!-- Un titre très important -->
+        <!-- Le titre h1 ne peut être présent qu'UNE seule fois par body/page... Si vous en mettez plusieurs, le navigateur va mal vous référencer. -->
+        <h1>Mon Titre Principal</h1>
+
+        <h2>Je suis un titre important</h2>
+
+        <h3>Je suis un titre d'importance moyenne</h3>
+
+        <h4>Je suis un titre pas très important</h4>
+
+        <h5>Je suis un titre peu important</h5>
+
+        <h6>Je suis un titre vraiment pas imporant</h6>
+
+        <!-- Les Paragraphes -->
+        <!-- On peut créer autant de paragraphes que l'on souhaite. -->
+        <hr>
+
+        <h2>Paragraphes</h2>
+        <p>Voici mon premier paragraphe</p>
+        <p>Et voilà        un        deuxième                      paragraphe</p>
+        <!-- Vous pouvez ajouter autant d'espaces que vous le souhaitez au sein d'un paragraphe ou d'un titre, ceux-ci ne seront jamais pris en compte. Ils ne seront jamais affiché. -->
+
+        <!-- Retour à la ligne -->
+        <!-- Pour effectuer un retour à la ligne en HTML nous allons devoir utiliser l'élément br qui est représenté par une balise orpheline. -->
+        <hr>
+        <h2>Retour à la ligne</h2>
+        <p>Voici un paragraphe <br> avec des retours <br> à la ligne</p>
+
+        <!-- Les Espaces -->
+        <!-- Il n'existe pas à proprement parlé d'élément permettant de gérer les espaces en HTML.
+            Cependant, on va pouvoir utiliser l'élément "pre" qui sert à préformater un texte.
+            Le texte écrit à l'intèrieur de cet élément va conserver la mise en forme que nous lui avons donner.
+        -->
+        <hr>
+        <h2>Les Espaces</h2>
+        <pre>
+            HTML    :   Le HTML est un langage utilisé pour 
+                        marquer sémantiquement un contenu
+            
+            CSS     :   Le CSS sert à mettre en forme des éléments en 
+                        leur appliquant des styles
+        </pre>
+
+        <!-- Les séparation Thématiques -->
+        <!-- Balise orpheline qui permet non seulement le retour à la ligne, mais également de tracer un trait continue sur notre page. -->
+        <hr>
+        <!-- Strong -->
+        <!-- Strong est utilisé pour signifier qu'un contenu est très important et doit être considéré comme tel par les moteurs de recherche. -->
+        <!-- la balise <b></b> met également les mots en gras, mais n'indique pas au navigateur une importance majeur. Seul strong permet de le faire.  -->
+        <h2>Strong</h2>
+        <p>
+            HTML signifie <strong>Hypertext Markup Language</strong>. C'est un langage utilisé pour marquer <b>sémantiquement</b> un contenu.
+        </p>
+
+
+        <!-- EM -->
+        <!-- L'élément HTML <em></em> pour (Emphasis ou emphase en français) sert à indiquer qu'un texte doit être considéré comme relativement important. 
+        Idem que pour strong et b, je peux mettre en italic du contenu sans pour autant augmenter son importance en utilisant la balise <i></i>.
+        -->
+        <hr>
+        <h2>em</h2>
+        <p>
+            HTML signifie <strong>Hypertext Markup Language</strong>. C'est un langage utilisé pour <em>marquer sémantiquement un contenu</em>.
+        </p>
+        <p>
+            HTML signifie <strong>Hypertext Markup Language</strong>. C'est un langage utilisé pour <i>marquer sémantiquement un contenu</i>.
+        </p>
+
+
+        <!-- Les listes -->
+        <hr>
+        <h2>Les listes</h2>
+        <h3>Les listes non-ordonnées</h3>
+
+        <!-- ul pour Unordered List -->
+        <ul>
+            <!-- li pour List Item -->
+            <li>Pomme</li>
+            <li>Vélo</li>
+            <li>Guitare</li>
+        </ul>
+
+
+        <h3>Les listes Ordonnées</h3>
+        <!-- ol pour Ordered List -->
+        <!-- On peut rajouter un attribut au niveau de ol pour changer le type de puce par défaut. Par défaut on à un affichage avec les chiffres (1, 2, 3 ..). 
+        Je dois rajoute l'attribut type="" 
+            J'ai 5 options de valeur pour cet attribut : 
+                1 -> valeur par défaut. Des chiffres apparaitront devant chaque élément de la liste
+                I -> Des Chiffres Romains apparaitront devant chaque élément de la liste
+                i -> Des Chiffres Romains en minuscules apparaitront devant chaque élément de la liste
+                A -> Des Lettres en majuscules apparaitront devant chaque élément de la liste
+                a -> Des Lettres en minuscules apparaitront devant chaque élément de la liste
+        -->
+        <ol type="a">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+
+        <h3>Listes Imbriquées</h3>
+        <!-- Il est tout à fait possible d'imbriquer des listes. Il suffit de respecter des règles d'imbriquation spécifique. -->
+        <ol type="A">
+            <li>Item A</li>
+            <li>Item B
+                <ol type="i">
+                    <li>Item a</li>
+                    <li>Item b</li>
+                </ol>
+            </li>
+            <li>Item C</li>
+        </ol>
+    </body>
+</html>

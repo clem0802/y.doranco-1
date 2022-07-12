@@ -1,0 +1,264 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------- */
+/* COMMON STYLES */
+button, i {
+    cursor: pointer;
+}
+ul {
+    /* supprimer les puces */
+    list-style: none;
+}
+a {
+    /* supprimer les soulignements */
+    text-decoration: none;
+}
+img, i {
+    background-repeat: no-repeat;
+}
+i {
+    background-position: center;
+}
+p span {
+    color: #27ae60;
+}
+
+/* ---------------------------------------- */
+/* COMMON CLASSES */
+.flex {
+    display: flex;
+}
+.flex_column {
+    flex-direction: column;
+}
+.justify_center {
+    justify-content: center;
+}
+.border {
+    border: 1px solid black;
+}
+.color_green {
+    color: green;
+}
+.text_center {
+    text-align: center;
+}
+.align_center {
+    align-items: center;
+}
+.padding_outer {
+    padding: 0.7rem;
+}
+.padding_inner {
+    padding: 0.4rem 0;
+}
+.half {
+    width: 50%;
+}
+.flex_wrap {
+    flex-wrap: wrap;
+}
+.justify_end {
+    justify-content: flex-end;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+#container {
+    width: 80vw;
+    height: 90vh;
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+#left_part {
+    width: 30%;
+    background-color: #4d772d;
+}
+#right_part {
+    width: 70%;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+/* (si besoin, pr faire disparaître scrollbar)
+#right_part::-webkit-scrollbar {
+    display: none;
+} 
+*/
+
+/* ---------------------------------------- */
+/* LEFT PART */
+#left_part img {
+    border-radius: 12px;
+    width: 30%;
+}
+#social_network i {
+    /* if "width: 5vw"  => ça sort des ovales !! */
+    height: 5vh;
+    width: 5vh;
+    border: 1px solid white;
+    margin: 0.3rem;
+    border-radius: 50%;
+}
+
+.fb {
+    background-image: url("img/fb.svg");
+    /* background-size: 65%; => si icon est trop grand, faut réduire...  */
+}
+.insta {
+    background-image: url("img/ig.svg");
+}
+.snap {
+    background-image: url("img/snap.svg");
+}
+.twitter {
+    background-image: url("img/tw.svg");
+}
+.linkedin {
+    background-image: url("img/li.svg");
+}
+
+/* ---------------------------------------- */
+/* NAV BAR */
+.nav_bar i {
+    height: 2vh;
+    width: 2vh;
+    /* border: 1px solid white; */
+    background-size: 100%;
+    margin-right: 0.8vw;
+}
+
+.about {
+    background: url("img/nav/about.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.portfolio {
+    background: url("img/nav/portfolio.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.services {
+    background: url("img/nav/services.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.resume {
+    background: url("img/nav/resume.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact {
+    background: url("img/nav/contact.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#left_part button {
+    background: rgba(29, 29, 29, 0.3);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+#left_part button i {
+    height: 2.5vh;
+    width: 2.5vh;
+    /* border: 1px solid white; */
+    background: url("img/send.svg");
+    margin-right: 0.5rem;
+}
+
+/* ---------------------------------------- */
+/* INPUT DARK MODE */
+.switch input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+.slider {
+    /* position: absolute; */
+    cursor: pointer;
+    border: 2px solid #ccc;
+    width: 5vw;
+    height: 4.5vh;
+    border-radius: 34px;
+    transition: 0.4s;
+    display: block;
+}
+.slider:before {
+    content:"";
+    position: absolute;
+    /* top: 0.2vh; */
+    /* left: 0.2vh; */
+    height: 3.5vh;
+    width: 3.5vh;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+    margin-top: 0.2vh;
+    margin-left: 0.2vh;
+}
+.switch input:checked + .slider {
+    background-color: rgba(0, 0, 0, 0.3);
+} 
+.switch input:checked + .slider:before {
+    transform: translateX(2.8vw);
+} 
+
+/* ---------------------------------------- */
+/* RIGHT PART */
+#right_part button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+#right_part button:nth-of-type(1) {
+    background-color: #27ae60;
+}
+#right_part button:nth-of-type(2) {
+    margin-left: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#right_part button i {
+    height: 2.5vh;
+    width: 2.5vh;
+}
+#right_part button .arrow {
+    background: url("img/nav/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#right_part button .sheet {
+    background: url("img/nav/resume.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#right_part h3 {
+    margin-left: 1rem;
+}
+#right_part h3::before {
+    content: "";
+    border: 2px solid #27ae60;
+    position: relative;
+    left: -1rem;
+}
+/* ---------------------------------------- */
+#experiences ul li {
+    width: 24%;
+    margin: 1%;
+}
+#experiences ul li p {
+    text-align: justify;
+}
+#experiences ul li i {
+    height: 4vh;
+    width: 4vh;
+    background: url("img/js.svg");
+    display: inline-block;
+    background-size: 100%;
+}

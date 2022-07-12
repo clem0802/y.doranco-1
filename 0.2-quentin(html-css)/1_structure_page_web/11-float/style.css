@@ -1,0 +1,13 @@
+img {
+    width: 200px;
+    /* float: left; */
+    float: right;
+    margin: 20px;
+}
+
+.clear {
+    /* "BOTH" indique ça efface (left)(right)*/
+    clear: both;
+}
+
+/* HOVER =>  transition: all ease-in-out(2s); */

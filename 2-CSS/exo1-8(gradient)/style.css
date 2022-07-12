@@ -1,0 +1,40 @@
+/* * {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+div {
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div:nth-of-type(1){
+    background: linear-gradient(red, orange, yellow, green, blue, purple);
+    /* background: linear-gradient(red 10%, orange 25%, yellow 40%, green 55%, blue 70%, purple 85%); */
+}
+
+/* green est actif qu'à partir du last 10% du div */
+div:nth-of-type(2) {
+    background: linear-gradient(red 10% 30%, green 90%);
+}
+
+div:nth-of-type(3) {
+    background: linear-gradient(red 0%, orange 10%, orange 30%, yellow 50%, yellow 70%, green 90%);
+}
+
+div:nth-of-type(4) {
+    background: linear-gradient(45deg, blue, red);
+}
+
+div:nth-of-type(5) {
+    background: linear-gradient(to left top, blue, red);
+}
+
+div:nth-of-type(6) {
+    background: linear-gradient(0deg, red, green 70%, yellow);
+}

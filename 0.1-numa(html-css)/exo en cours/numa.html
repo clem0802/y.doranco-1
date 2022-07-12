@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- nous avons besoin de definir un encodage de caractère comportant tous les caractères speciaux -->
+        <meta charset="UTF-8">
+        <title>Page d'initiation html/css (2022.06.22)</title>
+        <meta name="description" content="Ceci est la description de ma page pour un meilleur referrencement sur les moteurs de recherche">
+        <!-- Il y a trois methodes pour charger du css dans une page html
+            1- charger un fichier css externe (<link rel="stylesheet" href="style.css">)
+            2- element <style> dans le <head>
+            3- un attribut style="" directement dans la balise d'ouverture
+        -->
+        
+        <!-- method css 1 -->
+        <link rel="stylesheet" href="numa.css">
+
+        <!-- method css 2 -->
+        <style>
+            /* commentaire css : ici tout se code en css */
+            /* 
+            - le selecteur determine sur quel element html on doit appliquer la propriété
+            - il est suivi de deux accolades
+            - à l'interieur des accolades, je determine les propriétés à appliquer
+            - chaque propriété est suivie de ":" puis de sa valeur, chaque couple propriété/valeur se termine par ";"
+            */
+            body{
+                /* couleur de fond */
+                background-color: grey;
+                /* couleur de texte */
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Ceci est un commentaire -->
+        <!-- method css 3 -->
+        <h1 style="background-color: white; color: black;">
+        Ma super page éàùç
+        </h1>
+        <p>bonjour le monde</p>
+        <!-- src est un attribut de la balise img, chaque attribut est suivi du égal puis de guillements: entre les guillemets nous placons la valeur de l'attribut -->
+        <img style="width: 300px;" src="G-clef.png">
+        
+    </body>
+</html>

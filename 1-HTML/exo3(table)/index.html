@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Tables</title>
+    </head>
+    <body>
+        <div class="div1">
+            <!-- ******************(1)****************** -->
+            <!-- <tr> ligne / <th> titre de chaque colonne / <td> cellule / -->
+            <h2>Simple Table</h2>
+            <table border="1">
+                <tr>
+                    <th>title 1</th>
+                    <th>title 2</th>
+                    <th>title 3</th>
+                </tr>
+                <tr>
+                    <td>cell 1</td>
+                    <td>cell 2</td>
+                    <td>cell 3</td>
+                </tr>
+                <tr>
+                    <td>cell 1</td>
+                    <td>cell 2</td>
+                    <td>cell 3</td>
+                </tr>
+                <tr>
+                    <td>cell 1</td>
+                    <td>cell 2</td>
+                    <td>cell 3</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="div2">
+            <!-- ******************(2)****************** -->
+            <!-- <caption> une légende / <thead> line of title spread over / <tbody> table body -->
+            <!-- scope="row" => 1er élément de la row / colspan="2" => occupe 2 colonnes -->
+            <h2>More Advanced Table</h2>
+            <table border="1">
+                <caption>This is a "legend"</caption>
+                <thead>
+                    <tr>
+                        <th scope="row">title 1</th>
+                        <th>title 2</th>
+                        <th>title 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" scope="row">cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">cell 2</td>
+                        <td>cell 3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total</th>
+                        <td colspan="2">8900€</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="div3">
+            <!-- ******************(3)****************** -->
+            <!-- si scope="col" => 1er élément de la colonne -->
+            <h2>Budget Table</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="3">My budget every month</th>
+                    </tr>
+                    <tr>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>NB</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>gasoline</th>
+                        <td>250€</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>food</th>
+                        <td>800€</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>loan</th>
+                        <td>1000€</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Total :</th>
+                        <td>2050€</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </body>
+</html>

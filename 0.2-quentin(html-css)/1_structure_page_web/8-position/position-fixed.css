@@ -1,0 +1,13 @@
+nav {
+    background-color: cadetblue;
+    text-align: center;
+    padding: 10px 0;
+    /* position fixed fait perdre bcp de choses */
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+div#contenu {
+    margin: 60px;
+}

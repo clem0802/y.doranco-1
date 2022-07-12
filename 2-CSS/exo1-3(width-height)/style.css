@@ -1,0 +1,29 @@
+*{
+    margin: 20px;
+    /* padding:0;
+    box-sizing: border-box; */
+}
+
+div {
+    width:200px;
+    height:200px;
+    background-color: #34495e;
+    color: white;
+    font-size: 35px;
+}
+
+section {
+    min-width:200px;
+    min-height:200px;
+    background-color: #34495e;
+    color: white;
+    font-size: 35px;
+}
+
+span {
+    max-width:200px;
+    max-height:200px;
+    background-color: #34495e;
+    color: white;
+    font-size: 35px;
+}

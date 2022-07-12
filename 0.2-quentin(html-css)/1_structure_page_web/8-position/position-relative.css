@@ -1,0 +1,21 @@
+/* si j'ai qu'une seule valeur, alors celle-ci s'applique à tous les côtés (haut, bas, droite, gauche) */
+p {
+    margin: 0;
+}
+
+#zone {
+    border: 2px solid #336699;
+    /* margin: 50px; */
+    /* padding: 20px; */
+}
+
+
+/* position: ABSOLUTE, FIXED, RELATIVE, STATIC, STICKY */
+.relatif {
+    color: orange;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}

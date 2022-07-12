@@ -1,0 +1,116 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------------------------- */
+/* COMMON CLASSES */
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.align-center {
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+/* ----------------------------------------- */
+body {
+    padding: 20px;
+    background-color: rgb(240,240,240);
+    color: white;
+}
+.body-container {
+    width: 960px;
+    height: 750px;
+    border: 2px solid rgb(150,150,150);
+    text-align: center;
+}
+
+/* ----------------------------------------- */
+/* HEADER */
+.logo {
+    height: 120px;
+    width: 300px;
+    background-color: #6495ED;
+}
+.banner {
+    background-color: #4169e2;
+    width: 660px;
+}
+.menu {
+    width: 160px;
+}
+#menu > div:nth-child(1),
+#menu > div:nth-child(3),
+#menu > div:nth-child(5) {
+    background: #87CEFA;
+    color: white;
+    height: 50px;
+}
+#menu > div:nth-child(2),
+#menu > div:nth-child(4),
+#menu > div:nth-child(6) {
+    background: #00BFFF;
+    color: white;
+    height: 50px;
+}
+
+/* ----------------------------------------- */
+/* MAIN */
+main {
+    height: 500px;
+}
+.col {
+    color: rgb(150,150,150);
+    height: 100px;
+    width: 260px;
+    margin: 20px 20px 0 20px;
+    background-color: rgb(255,255,255);
+    border: 1px solid rgb(150,150,150);
+}
+.iframe-container {
+    background-color: rgb(255,255,255);;
+}
+.iframe {
+    height: 460px;
+    margin: 20px;
+    padding: 0 26px;
+    background-color: rgb(240,240,240);
+    border: 1px solid rgb(150,150,150);
+    color: rgb(150,150,150);
+}
+.contenu {
+    height: 100px;
+}
+
+/* ----------------------------------------- */
+/* FOOTER */
+.footer-container {
+    height: 80px;
+}
+.footer {
+    width: 240px;
+}
+#footer > div:nth-child(1),
+#footer > div:nth-child(3) {
+    background: #87CEFA;
+    color: white;
+    height:80px;
+}
+#footer > div:nth-child(2),
+#footer > div:nth-child(4) {
+    background: #00BFFF;
+    color: white;
+    height: 80px;
+}

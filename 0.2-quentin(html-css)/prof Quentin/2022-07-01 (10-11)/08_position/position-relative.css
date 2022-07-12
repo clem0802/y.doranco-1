@@ -1,0 +1,22 @@
+p{
+    /* 
+        Si je n'ai qu'une seule valeur alors celle-ci s'appliquera à tous les côté (haut, bas, droite, gauche) 
+    */
+    margin: 0;
+}
+
+#zone{
+    border: 2px solid #336699;
+    /* padding: 10px; padding est la marge interne d'un élément */
+    /* margin: 10px; margin est la marge extérieur d'un élément */
+}
+
+/* La position relative :
+    On dit à l'élément qu'il peut bouger par rapport à sa position de départ. (non pas par rapport à la div dans laquelle l'élément se trouve)
+*/
+.relatif{
+    color: orange;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}

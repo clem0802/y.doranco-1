@@ -1,0 +1,64 @@
+﻿ATELIER INTEGRATION
+
+
+Reproduire les visuels fournis en créant respectivement pour chacun d'entre eux un fichier html et un fichier css.
+Le code devra être adapté, lisible et répondra aux critères du validator W3C.
+
+Ce travail d'intégration attend un rendu sur navigateur le plus fidèle possible, il demande donc un maximum d'attention.
+
+- Définir les différentes zones induisant les blocs à créer.
+- Etablir les blocs de facon à ce qu'ils s'alignent horizontalement si besoin.
+- Estimer les tailles, proportions et détails visuels pour tous les éléments qu'ils soient décris plus bas dans ce document ou non.
+
+
+
+************************************************
+**********************  TP  *******************
+************************************************
+
+Créez un fichier tp.html faisant appel à un fichier tp.css.
+Voici les détails à prendre en compte pour certains des éléments de l'exercice:
+
+PAGE :
+fond rgb(100,100,100) - texte blanc - police à bâton
+
+HEADER :
+fond : #228B22
+
+CONTENEUR dans le HEADER, dans le contenu et le dans le FOOTER :
+autocentré - largeur : 80% de son parent
+
+LOGO :
+largeur : 25% - hauteur : 120px - couleur : #3CB371
+
+MENU :
+largeur : 75% - couleurs : #32CD32 et #9ACD32
+
+BLOCS A, B, C et D :
+fond : rgb(200,200,200) - largeur : 46% - hauteur 100px - marges exterieures : 2%
+
+CONTENU :
+Carte GoogleMap intégrée:
+Se rendre sur le site https://www.google.fr/maps, y selectionner une adresse de votre choix.
+Cliquez sur le bouton "partager" du panneau latéral puis le bouton "intégrer une carte".
+Copiez puis collez la balise <iframe> proposée à l'emplacement souhaité dans votre code après avoir entré les paramètres de votre choix.
+
+Vous pouvez parametrer la taille ce cet iframe via CSS ou dans l'attribut HTML width="".
+
+FOOTER :
+hauteur : 80px - couleurs : #32CD32 et #9ACD32
+
+
+
+
+************************************************
+************************************************
+
+
+
+
+Bon code !
+
+
+
+

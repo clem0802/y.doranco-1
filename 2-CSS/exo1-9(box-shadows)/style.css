@@ -1,0 +1,52 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 400px;
+    margin: 20px auto;
+    background-color: #34495e;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+/* -------------------------------------- */
+/* (vidéo DORANCO):
+-décalage sur le côté (SHIFT RIGHT)
+-décalage sur la hauteur (SHIFT DOWN)
+-la propagation (SPREAD)
+-le flou (BLUR)
+-----------------------------
+-color (COLOR)
+-opacité (OPACITY)
+*/
+
+div:nth-of-type(1) {
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 20px 12px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+div:nth-of-type(2) {
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: -20px 12px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+div:nth-of-type(3) {
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 0px 30px 30px rgba(0, 0, 0, 0.4);
+}
+
+div:nth-of-type(4) {
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 50px 40px 0px rgba(0, 0, 0, 0.4);
+}

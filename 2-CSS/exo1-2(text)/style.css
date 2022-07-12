@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 4%;
+    margin-left: 10%;
+}
+h2 + p {
+    margin-bottom: 40px;
+}
+.color + p {
+    color: rgba(240,52,52,1);
+}
+.font-size + p {
+    /* 1em => 100% de la taille du parent, nothing changed */
+    /* font-size: 1em; */
+    /* 2rem => basé sur la page entière, la racine du projet, et non du parent */
+    font-size: 2rem;
+}
+.font-family + p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.line-height + p {
+    /* line-height: 40px; */
+    /* line-height: 3rem; */
+    /* line-height: 1vh; */
+    line-height: 3vw;
+}
+.word-spacing + p {
+    word-spacing: 35px;
+}
+.letter-spacing + p {
+    letter-spacing: 35px;
+}
+.text-align + p {
+    /* text occupies FULLY and "RECTANGULARLY" the space */
+    text-align: justify;
+}
+.text-decoration + p {
+    text-decoration: overline;
+}
+.text-indent + p {
+    text-indent: 30px;
+}
+.text-transform + p {
+    text-transform: uppercase;
+}

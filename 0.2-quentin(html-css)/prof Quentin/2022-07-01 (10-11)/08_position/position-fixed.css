@@ -1,0 +1,16 @@
+nav{
+    background-color: cadetblue;
+    text-align:center;
+    /* padding: 10px 0px 10px 0px; */
+    /* Si je passe 4 valeurs, cela correspond dans l'ordre à haut, droite, bas, gauche */
+    padding: 10px 0px; /* si je ne passe que 2 valeurs, la première correspond à haut/bas et la deuxième correspond à droite/gauche */
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+div#contenu{
+    margin-top: 40px;
+}

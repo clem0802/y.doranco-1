@@ -1,0 +1,124 @@
+.container{
+    width : 80%;
+    border : 1px solid #111;
+    margin: 0 auto;
+    display: flex; /* display flex permet de mettre tous les éléments du parent sur la même ligne */
+}
+
+.item{
+    background-color: darkgray;
+    border: 1px solid black;
+    min-height: 100px; /* min-height signifie que mon block fera toujours au minimum 100px mais pourra le cas échéant augmenter sa taille en fonction de son contenu*/
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    margin: 1%;
+}
+
+.item{
+    flex: auto; /* flex : auto ; permet de dire aux éléments d'adapter leur largeur pour que tous rentre à l'interieur du block en prenant la largeur global du parent. Ils s'arrangent entre eux pour chacun une largeur égale */
+}
+
+.item4-1{
+    width: 500px;
+}
+
+.item4-2{
+    width: 200px;
+}
+
+/* .item5-1{
+    flex-grow: 1;
+} */
+.item5-2{
+    flex-grow: 3; /* Permet définir le nombre d'espace que l'élément va prendre à l'intérieur de l'élément parent. */
+}
+.item5-3{
+    flex-grow: 2;
+}
+
+.item7-1{
+    order: 4; /* order me permet de définir la position de l'élément dans l'élément parent. Si 2 éléments ont le même numéro, alors ils prendront l'ordre de base */
+}
+.item7-2{
+    order: 4;
+}
+.item7-3{
+    order: 1;
+}
+.item7-4{
+    order: 2;
+}
+
+.container8{
+    flex-direction: row-reverse; /* Par défaut la direction du flex est en "row" on peut décider de placer nos éléments en "column".
+    On peut également inverser l'ordre des éléments grâce à "row-reverse" ou "column-reverse" */
+    /* flex-direction: column-reverse; */
+}
+
+/* .item9-1, .item9-2, .item9-3, .item9-4{} */
+/* .container9 > .item{} Quand on utilise le chevront on indique que l'on cherche la classe .item uniquement dans les éléments enfant-direct. */
+.container9 > .item, .container10 > .item, .container11 > .item, .container12 > .item, .container13 > .item, .container14 > .item, .container15 > .item, .container16 > .item, .container17 > .item{
+    width: 150px;
+    flex:none;
+}
+/* .container9 .item {
+    width: 150px;
+    flex: none; J'enlève le comportement du flex: auto; définie plus haut 
+} */
+.container9{
+    justify-content: center; /* ici j'indique que je souhaite centrer sur la largeur mes éléments. */
+}
+
+/* .container10 .item{
+    width: 150px;
+    flex: none;
+} */
+.container10{
+    /* justify-content: right; */
+    justify-content: end;
+}
+
+/* .container11 .item{
+    width: 150px;
+    flex:none;
+} */
+
+.container11{
+    justify-content: start;
+}
+
+.container12{
+    justify-content: space-between;
+}
+
+.container13{
+    justify-content: space-around;
+}
+
+.container14{
+    justify-content: space-evenly;
+}
+
+.container15{
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+}
+
+.container16{
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.item16-1{
+    align-self: start;
+}
+.item16-4{
+    align-self: end;
+}
+
+.container17{
+    flex-wrap: wrap;
+    justify-content: center;
+}

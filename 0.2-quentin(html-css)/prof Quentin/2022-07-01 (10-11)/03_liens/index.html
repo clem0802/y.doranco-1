@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les liens HTML</title>
+</head>
+<body>
+    
+    <h2>Les liens externes</h2>
+    <!-- Le href est obligatoire. Il permet de définir la cible de mon lien. -->
+    <p>
+        <a href="https://www.tf1.fr/">TF1 actualités</a> le site officiel de TF1
+    </p>
+    <!-- Si je souhaite ouvrir le lien dans un nouvel onglet et garder ma page active je peux rajouter l'attribut 'target' et lui donner la valeur "_blank" -->
+    <p>
+        <a href="http://www.google.com/" target="_blank">Google</a> Le célèbre moteur de recherche
+    </p>
+
+    <h2>Les internes</h2>
+    <!-- Lien vers une page qui est dans le même dossier. Je dois uniquement appeler le nom du fichier que je souhaite ouvrir au moment du clique. -->
+    <p>
+        <a href="contact.html">Page Contact</a>
+    </p>
+    <!-- Lien vers une page qui se trouve un dossier "enfant". Je dois appeler le nom du dossier suivi d'un "/" puis du nom du fichier -->
+    <p>
+        <a href="milieu/fichier-milieu.html">Page du Milieu</a>
+    </p>
+    <!-- Lien vers une page qui est dans un dossier à l'intèrieur d'un autre dossier. On rajoute les noms des dossiers les uns après les autres séparés par des "/" -->
+    <p>
+        <a href="milieu/sous/fichier-sous.html">Page du dossier "sous"</a>
+    </p>
+
+    <!-- 
+        Pour les liens externes j'utiliserais tout le temps de liens absolu. 
+        Pour les liens internes j'utiliserais des liens relatifs.
+        La différence entre un lien absolu et relatif est qu'un lien absolu ne prend pas en compte son environement.
+    -->
+
+    <h2>Les autres types de liens</h2>
+
+    <h3>Envoie d'email</h3>
+    <p>
+        Envoyez-moi un <a href="mailto:quentin.vilfeu.dev@gmail.com">email</a> 
+    </p>
+
+
+    <h3>Afficher ou Télécharger un fichier</h3>
+        <a href="cv.pdf" download="" target="_blank">Voir mon CV</a> 
+        <!-- L'attribut download qui permet de forcer le téléchargement. -->
+    <p>
+        <a href="cv.doc" target="_blank">Voir mon CV</a> 
+    </p>
+
+
+    <h3>Les Ancres</h3>
+    
+    <a href="#ancre1">Lien direct vers mon ancre 1</a>
+    <a href="#toto2">Lien direct vers mon ancre 2</a>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <p id="ancre1">Ma première ancre</p>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <p id="toto2">Ma deuxième ancre</p>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+body {
+    margin-top: 30px;
+}
+
+#background1 {
+    height: 200px;
+    width: 200px;
+    background-color: #34495e;
+    margin: 0 auto;
+}
+
+#background2 {
+    height: 200px;
+    width: 200px;
+    background: url("G-clef.png") no-repeat center;
+
+    /* l'image doit prendre 100% de son parent */
+    background-size: cover;
+    border-radius: 100%;
+    margin: 0 auto;
+}

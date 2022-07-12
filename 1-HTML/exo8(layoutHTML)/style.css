@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+    margin: 3% 10%;
+}
+.body-container {
+    background-color: cornsilk;
+}
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: aqua;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 8px;
+}
+.nav-container {
+    display: flex;
+    flex-flow: row-reverse;
+}
+nav {
+    background-color: lightgreen;
+    width: 30%;
+    padding: 1% 2% 1% 1%;
+    margin: 1%;
+    border-radius: 8px;
+    text-align: right;
+}
+nav li {
+    display: inline-block;
+}
+/* enlever les puces d'une liste UL */
+ul {
+    list-style: none;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: rgb(244, 76, 76);
+}
+main {
+    background-color: pink;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 8px;
+}
+.aside-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    background-color: yellow;
+    padding: 2%;
+    margin: 4% 4% 2% 2%;
+    border-radius: 8px;
+    height: 25vh;
+    text-align: right;
+}
+section {
+    background-color: orange;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 8px;
+}
+article {
+    background-color: beige;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: greenyellow;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 8px;
+    text-align: center;
+}
+footer ul li {
+    display: inline-block;
+    text-align: center;
+}

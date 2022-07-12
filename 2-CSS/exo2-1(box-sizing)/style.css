@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+#parent {
+    width: 200px;
+    margin: 0 auto;
+    background-color: tomato;
+}
+
+.inner-elem {
+    width: 40px;
+    border: 1px solid black;
+    height: 40px;
+    float: left;
+}
+
+/* 
+    parent width: 200px
+    enfant width: 40+1+1=42
+                42x5=210 (donc ça dépasse parent width)
+    d'où l'importance d'initier BOX-SIZING au début 
+*/
+
+/* ---------------------------------------------- */
+
+#parent {
+    width: 200px;
+    margin: 0 auto;
+    background-color: tomato;
+    display: flex;
+}
+
+.inner-elem {
+    width: 40px;
+    border: 1px solid black;
+    height: 40px;
+}
+/* 
+display: flex va répartir automatiquement l'espace, tout seul 
+donc, à privilégier  DISPLAY:FLEX
+*/

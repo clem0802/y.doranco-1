@@ -1,0 +1,49 @@
+body {
+    color: red;
+    background-color: bisque;
+}
+
+/* ID selector */
+/* CLASS selector */
+/* TAG selector */
+
+/* ID > CLASS > TAG */
+
+
+/* ----------------------------------------- */
+/* TYPE selector */
+input[type="password"] {
+    border: 3px solid dodgerblue;
+}
+
+/* TITLE selector */
+img[title="img2"] {
+    border-radius: 12px;
+    border: 5px solid red;
+    width: 300px;
+}
+
+div#mySecondDiv ul li:nth-child(2) a {
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div#myThirdDiv p:first-child {
+    color: green;
+    font-size: 25px;
+}
+p {
+    color: black;
+}
+
+#myThirdDiv + span {
+    color: darkorchid;
+}
+h2 {
+    color: darkblue;
+}
+h2:hover {
+    color: teal;
+    font-size: 30px;
+}

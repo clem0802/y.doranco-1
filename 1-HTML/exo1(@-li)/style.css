@@ -1,0 +1,61 @@
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div {
+    padding: 16px;
+    margin: 6px;
+    border-radius: 12px;
+}
+.titles {
+    background-color: pink;
+    text-align: center;
+}
+
+.links {
+    background-color: lightgreen;
+    text-align: center;
+    padding: 2%;
+}
+
+/* index1P.html */
+p {
+    padding: 5%;
+    margin: 5px;
+    border-radius: 12px;
+    background-color: lightcyan;
+    font-size: 20px;
+    text-align: center;
+}
+.para {
+    text-align: center;
+}
+
+/* index2L.html */
+.fruits, .veggies, .nav-media, .nav-city, .nav-coding, .nav-number {
+    margin-top: 3%;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+#nav-city, #nav-coding, #nav-number {
+    padding-right: 25px;
+}
+.lists {
+    background-color: lightskyblue;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    padding: 2%;
+}
+ul, ol {
+    background-color: lightskyblue;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    font-weight: bold;
+}

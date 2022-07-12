@@ -1,0 +1,28 @@
+#conteneur{
+    width: 1000px;
+    border: 1px dashed black;
+    margin: 0 auto;
+}
+
+header{
+    background-color: aquamarine;
+    height: 80px;
+}
+
+nav{
+    background-color: blueviolet;
+    height: 30px;
+}
+
+section{
+    background-color: yellow;
+    height: 500px;
+    /* margin: 10px 10px 10px 10px; */
+    /* margin: 10px 10px; */
+    margin: 10px;
+}
+
+footer{
+    background-color: aquamarine;
+    height: 60px;
+}

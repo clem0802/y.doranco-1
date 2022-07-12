@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;  
+    margin: 10px 150px 100px 150px;
+    /* margin: auto; */
+    border: 2px solid black;
+    min-height: 650px;
+    line-height: 100%;
+}
+.header {
+    height: 20%;
+    min-height: 90px;
+    line-height: 100%;
+    background-color: aquamarine;
+}
+.main {
+    height: 70%;
+    min-height: 550px;
+    line-height: 100%;
+}
+.purple {
+    background-color: blueviolet;
+    height: 40px;
+}
+.yellow {
+    margin: 20px;
+    background-color: yellow;
+    min-height: 480px;
+    line-height: 100%;
+}
+.footer {
+    height: 10%;
+    min-height: 70px;
+    line-height: 100%;
+    background-color: aquamarine;
+}
+

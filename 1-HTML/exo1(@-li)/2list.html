@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lists</title>
+</head>
+<body>
+    <!-- (EMMET shortcuts) https://www.youtube.com/watch?v=45eWEO0gRHI&ab_channel=CoderCoder -->
+    <a href="index.html" style="font-weight:bold; font-size:25px;">Go Back to Main Page</a>
+    <div class="fruits">
+        <h1>My Fruits</h1>
+        <p style="text-align: center;">Unordered List</p>
+        <ul>
+            <li>Banana</li>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Cherry</li>
+            <li>Melon</li>
+        </ul>
+    </div>
+    <!-- ********************************** -->
+    <div class="veggies">
+        <h1>My Veggies</h1>
+        <p style="text-align: center;">Ordered List</p>
+        <ol>
+            <li>Carrot</li>
+            <li>Spinach</li>
+            <li>Potato</li>
+            <li>Onion</li>
+            <li>Pumpkin</li>
+        </ol>
+    </div>
+    <!-- ********************************** (les puces creuses) -->
+    <div class="nav-media">
+        <h1>My Navigation Menu1</h1>
+        <p style="text-align: center;">Unordered Circle List</p>
+        <ul style="list-style-type:circle;">
+            <li><a href="#">FB</a></li>
+            <li><a href="#">IG</a></li>
+            <li><a href="#">GitHub</a></li>
+        </ul>
+    </div>
+    <!-- ********************************** (les puces disparues) -->
+    <div class="nav-city">
+        <h1>My Navigation Menu2</h1>
+        <p style="text-align: center;">Unordered Circle List</p>
+        <ul style="list-style-type:none;" id="nav-city">
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">NYC</a></li>
+            <li><a href="#">Tokyo</a></li>
+            <li><a href="#">Taipei</a></li>
+        </ul>
+    </div>
+    <!-- ********************************** (display: inline) -->
+    <div class="nav-coding">
+        <h1>My Navigation Menu3</h1>
+        <p style="text-align: center;">Ordered Circle List</p>
+        <ul style="list-style-type:none;" id="nav-coding">
+            <li style="display:inline"><a href="#">HTML & CSS</a></li>
+            <li style="display:inline"><a href="#">JavaScript</a></li>
+            <li style="display:inline"><a href="#">React</a></li>
+            <li style="display:inline"><a href="#">Python</a></li>
+            <li style="display:inline"><a href="#">PhP</a></li>
+            <li style="display:inline"><a href="#">SQL</a></li>
+            <li style="display:inline"><a href="#">NodeJS, Express</a></li>
+        </ul>
+    </div>
+    <!-- ********************************** (the sub-list) -->
+    <div class="nav-number">
+        <h1>My Navigation Menu4</h1>
+        <p>Sub-Lists</p>
+        <ul id="nav-number">
+            <li>Elem1
+                <ul>
+                    <li>un</li>
+                    <li>deux</li>
+                    <li>trois</li>
+                </ul>
+            </li><br>
+            <li>Elem2
+                <ul>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>three</li>
+                </ul>
+            </li><br>
+            <li>Elem3
+                <ul>
+                    <li>eins</li>
+                    <li>zwei</li>
+                    <li>drei</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+</html>

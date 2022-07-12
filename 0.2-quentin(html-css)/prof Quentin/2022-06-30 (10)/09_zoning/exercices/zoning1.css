@@ -1,0 +1,22 @@
+#zoneHaut{
+    background-color: red;
+    width: 800px;
+    height: 70px;
+}
+
+#zoneGauche{
+    background-color: blue;
+    width: 150px;
+    height: 530px;
+}
+
+#zoneDroite{
+    background-color: green;
+    width: 650px;
+    height: 530px;
+}
+
+section{
+    width: 800px;
+    display: flex;
+}

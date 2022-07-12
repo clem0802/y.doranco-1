@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base CSS</title>
+
+    <style>
+        /* On a le selecteur <p> suivi des "{}" et a l'intérieur des "{}" on des déclarations.
+            Une déclaration est un couple "propriété" / "valeur" 
+            Ex : color : blue ; 
+            */
+        p{ 
+            color: blue;
+            font-size: 30px;
+            /* color: rgb(0, 0, 255);
+            color: rgba(0, 0, 255, 0.5);
+            color: #0000ff; */
+        }
+        body{
+            background-color: black;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1 style="color:white;">J'apprend à utiliser le CSS</h1>
+
+    <p>Un Paragraphe</p>
+
+    <p>Un deuxième paragraphe <a href="">voir la suite</a> </p>
+    <p id="paragraphe" class="paragraphe">Troisième paragraphe</p>
+    <p class="paragraphe">Quatrième paragraphe</p>
+
+    <!-- 
+        éléments Block
+            - Retour à la ligne automatique
+            - Il y a des marges automatiquement créée
+            - Il prend toute la largeur de l'élément parent
+                h1->h6, div, p, ul, li, ol, nav, article, section ...
+
+        éléments Inline 
+            - Ils ne commencent pas sur une nouvelle ligne.
+            - Ils prennent uniquement la largeur nécessaire.
+                span, a, img, button, input, strong, em, b, i ..
+        
+        Un Élément inline peut se trouver à l'interieur d'un élément block. Par contre le contraire n'est pas vrai. Un élément block ne peut pas se trouver à l'interieur d'un élément inline.
+    -->
+
+    <div>
+        salut
+    </div>
+    <a href="" class="inline">Bonjour</a>
+
+    <div>
+        <h2>Mon titre secondaire</h2>
+        <p class="extrait">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates nisi inventore, sunt dignissimos aliquam quia esse aspernatur recusandae corrupti voluptatibus voluptatem nobis doloribus, nulla ipsam obcaecati officia placeat, hic perspiciatis culpa fugit. Officiis laudantium pariatur repellat at, veritatis minus magnam eligendi laborum ipsum exercitationem? Fugit doloremque necessitatibus cupiditate corporis est ullam quibusdam quia. Magni quibusdam esse dolorem voluptas velit at iure aspernatur est facere eos modi eaque hic temporibus cumque ullam accusamus, assumenda sint maxime dignissimos! At ab iure velit ipsum autem voluptas recusandae fugit! Iste totam veritatis molestias tempora, illum doloribus architecto hic repudiandae at magnam quas tempore.</p>
+    </div>
+
+    <h2>Mon deuxième titre secondaire</h2>
+    
+</body>
+</html>

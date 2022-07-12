@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+</head>
+<body>
+    <!-- 
+        Dans la balise Form on aura plusieurs attributs :
+            action => permet de définir l'url de destination après validation du formulaire. Le traitement du formulaire se fera au niveau de l'url qui est indiqué.
+
+            method => Préciser comment vont circuler les données. 2 choix possible get et post. "get" enverra les données dans l'url et "post" les enverra dans une variable. (Plus d'informations viendront lors de PHP). Par défaut ce sera la méthode "get" de sélectionner si rien n'est indiqué au niveau de la méthode.
+
+            enctype => Pour l'envoie de fichier.
+
+
+        label => étiquette qui permet de donner un nom. Le label n'est pas obligatoire.
+        input => élément du formulaire. 
+            On peut mettre différent attributs dans notre input pour configurer celui-ci.
+            - placeholder => Une indiquation à l'interieur de l'input qui n'est pas une valeur par défaut. 
+            - required => Permet de dire si le champ est obligatoire
+            - value => me permet de donner une valeur par défaut. S'il est utilisé pour un bouton, cela nous permet de changer le titre du bouton.
+        
+        Pour la validation du formulaire on a 2 possibilités : 
+            - Input de type submit
+            - Button qui validera automatiquement le formulaire. Pas besoin de lui indiquer de type particulier.
+        
+        Liste des inputs : 
+            - text => saisie de texte court
+            - password => saisie de mot passe. Permet de cacher ce que l'on écrit
+            - email => nous permet de donner des règles d'écriture. Je suis obligé de rentrer un "@" par exemple
+            - file => permet de sélectionner des fichiers.
+    -->
+    <form action="" method="" enctype="">
+        
+        <label for="pseudo">Pseudo *</label>
+        <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" required>
+        <br>
+
+        <label for="mdp">Mot de Passe</label>
+        <input type="password" id="mdp" name="mdp">
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <br>
+
+        <label for="avatar">Avatar</label>
+        <input type="file" id="avatar" name="avatar">
+        <br>
+
+        <label for="pays">Pays</label>
+        <select name="pays" id="pays" > <!-- Si on souhaite donner la possibilité de sélectionner plusieurs option on peut rajouter l'attribut "multiple" -->
+            <option value="" selected disabled>Sélectionner votre pays</option> <!-- l'attribut "disabled" permet de désactiver la possibilité de sélectionner cette option.  -->
+            <optgroup label="Europe">
+                <option value="fr">France</option>
+                <option value="it">Italie</option>
+                <option value="es">Espagne</option> <!-- l'attribut "selected" me permet de pré-selectionner une option. -->
+            </optgroup>
+            <optgroup label="Afrique">
+                <option value="fr">Afrique du Sud</option>
+                <option value="it">Maroc</option>
+                <option value="es">Tunisie</option> <!-- l'attribut "selected" me permet de pré-selectionner une option. -->
+            </optgroup>
+        </select>
+        <br>
+        <label for="choix" >Quel sont vos fruits préférés ?</label>
+        <p>
+            <input type="checkbox" value="fraise" name="choix"> Fraise 
+            <input type="checkbox" value="poire" name="choix"> Poire
+            <input type="checkbox" value="orange" name="choix" checked> Orange
+        </p>
+        <br>
+
+        <label for="civilite">Civilité</label>
+        <p>
+            <input type="radio" name="civilite" value="mr"> Monsieur 
+            <input type="radio" name="civilite" value="mme"> Madame 
+        </p>
+        <br>
+
+        <label for="adresse">Adresse</label>
+        <textarea name="adresse" id="adresse" cols="30" rows="10" placeholder="Mon super texte"></textarea>
+        <br>
+
+
+        <br>
+        <!-- <input type="submit" name="inscription" value="S'inscrire"> -->
+        <button>S'inscrire</button>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background-color: lightgreen;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 12px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    border-radius: 12px;
+}
+p {
+    padding: 3%;
+    background-color: lightcyan;
+    border-radius: 12px;
+    text-align: center;
+}

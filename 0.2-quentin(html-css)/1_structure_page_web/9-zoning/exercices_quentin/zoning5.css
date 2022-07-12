@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-direction: column;  
+    /* margin: 10px 150px 100px 150px; */
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid black;
+    min-height: 650px;
+    line-height: 100%;
+}
+
+/* <header> est un élém bloc, donc il prend 100% de largeur de son parent */
+.header {
+    height: 20%;
+    min-height: 90px;
+    line-height: 100%;
+    background-color: aquamarine;
+}
+.main {
+    height: 70%;
+    min-height: 550px;
+    line-height: 100%;
+}
+.purple {
+    background-color: blueviolet;
+    height: 40px;
+}
+.inner {
+    margin: 20px;
+    min-height: 480px;
+    line-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bloc {
+    width: 50%;
+    min-height: 240px;
+    line-height: 100%;
+}
+.blocA {
+    background-color: aquamarine;
+}
+.blocB {
+    background-color: yellow;
+}
+.blocC {
+    background-color: #b1b2d8;
+}
+.blocD {
+    background-color: rgb(77, 77, 219);
+}
+.footer {
+    height: 10%;
+    min-height: 70px;
+    line-height: 100%;
+    background-color: aquamarine;
+}
+
+

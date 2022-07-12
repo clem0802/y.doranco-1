@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;  
+    margin: 15px 150px 100px 150px;
+}
+.header {
+    height: 87%;
+    min-height: 650px;
+    line-height: 100%;
+    display: flex;
+}
+.gauche {
+    background-color: #40a497;
+    width: 50%;
+}
+.droite {
+    background-color: #9a40a4;
+    width: 50%;
+}
+.footer {
+    background-color: #f0c000 ;
+    height: 13%;
+    display: flex;
+    flex: auto;
+    min-height: 100px;
+    line-height: 100%;
+}

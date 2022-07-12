@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- nous avons besoin de definir un encodage de caractère comportant tous les caractères speciaux -->
+        <meta charset="UTF-8">
+        <title>Page d'initiation html/css</title>
+        <meta name="description" content="Ceci est la description de ma page pour un meilleur referrencement sur les moteurs de recherche">
+        <!-- Il y a trois methodes pour charger du css dans une page html
+            1- charger un fichier css externe (<link rel="stylesheet" href="style.css">)
+            2- element <style> dans le <head>
+            3- un attribut style="" directement dans la balise d'ouverture
+        -->
+
+        <!-- chargement Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+
+
+        <!-- methode 1 -->
+        <link rel="stylesheet" href="style.css">
+        <!-- methode 2 -->
+        <style>
+            /* commentaire css : ici tout se code en css */
+            /* 
+            - le selecteur determine sur quel element html on doit appliquer la propriété
+            - il est suivi de deux accolades
+            - à l'interieur des accolades, je determine les propriétés à appliquer
+            - chaque propriété est suivie de ":" puis de sa valeur, chaque couple propriété/valeur se termine par ";"
+            */
+            body{
+                /* couleur de fond */
+                background-color: grey;
+                /* couleur de texte */
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Ceci est un commentaire -->
+        <!-- methode css 3 -->
+        <h1 style="background-color: white; color: black;">
+        Ma super page éàùç
+        </h1>
+        <p>bonjour le monde</p>
+        <p class="gros gras">Deuxième paragraphe:greghtrehtrhrthrth</p>
+        <!-- src est un attribut de la balise img, chaque attribut est suivi du égal puis de guillements: entre les guillemets nous placons la valeur de l'attribut -->
+        <!-- <img style="width: 300px;" src="business-people.jpg"> -->
+        <img style="width: 300px;" src="images/toureiffel.jpg">
+        
+
+        <script>
+            // commentaire js
+
+            // manipulation du DOM
+            // Document Object Model
+
+            // selection d'un élément
+            console.log(document.querySelector('h1'));
+
+            // déclarer un événement sur cette sélection
+            document.querySelector('h1').onclick = function(){
+                console.log('coucou');
+            };
+
+            // modifications lorsque l'événement se produit
+            document.querySelector('h1').onclick = function(){
+                this.innerText = 'Titre modifié';
+                // changer le texte de mon paragraphe
+                document.querySelector('p').innerText = 'coucou';
+                document.querySelector('body').style.background = "green";
+            };
+        </script>
+    </body>
+</html>
+<!-- 
+
+Documentation officielle html et css
+MDN
+https://developer.mozilla.org/
+
+Validator W3C:
+html : https://validator.w3.org/
+css : https://jigsaw.w3.org/css-validator/
+
+Tester la compatibilité et la retrocompatibilité du code
+https://caniuse.com/
+
+Quelques sites interessants :
+https://openclassrooms.com/
+https://www.w3schools.com/
+
+App en ligne de retouche d'image
+https://pixlr.com/fr/
+
+ -->

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms / Quentin - 2022.06.28</title>
+    </head>
+    <body>
+        <!-- "action" => pour indiquer l'URL où le traitement du formulaire va se passer -->
+        <!-- "method" => comment vont circuler les données, GET & POST -->
+        <!-- GET envoi les données vers l'URL, et POST envoie dans une variable (PHP) -->
+        <!-- "enctype" => c'est pour l'envoi du fichier, PHP -->
+        <form action="" method="" enctype="">
+
+            <!-- "label" => donner le nom de "input" -->
+            <!-- "name" est très ipt -->
+            <!-- "for" + "id" les deux servent pour liaison -->
+            <!-- input "file" permet de sélectionner un fichier -->
+            <label for="test">Full Name *</label>
+            <input type="text" name="test" id="test" placeholder="your name" required>
+            <br/><br/>
+
+            <label for="mdp">Password</label>
+            <input type="password" id="mdp" name="mdp">
+            <br/><br/>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <br/><br/>
+
+            <label for="avatar">Avatar</label>
+            <input type="file" id="avatar" name="avatar">
+            <br/><br/>
+
+            <!-- "selected" met que l'option est pré-sélectionnée -->
+            <!-- "multiple" permet au choix multiple -->
+            <label for="pays">Country</label>
+            <select name="pays" id="pays" multiple>
+                <option value="" selected disabled>Choose :</option>
+                <optgroup label="AB">
+                    <option value="dz">Algeria</option>
+                    <option value="ar">Argentina</option>
+                    <option value="au">Australia</option>
+                    <option value="at">Austria</option>
+                    <option value="bs">Bahamas</option>
+                    <option value="be">Belgium</option>
+                    <option value="bf">Burkina Faso</option>
+                </optgroup>
+                <optgroup label="C">
+                    <option value="kh">Cambodia</option>
+                    <option value="cm">Cammeroon</option>
+                    <option value="ca">Canada</option>
+                    <option value="cl">Chile</option>
+                    <option value="cn">China</option>
+                    <option value="co">Colombia</option>
+                    <option value="cr">Costa Rica</option>
+                    <option value="cu">Cuba</option>
+                    <option value="cz">Czechia</option>
+                </optgroup>
+                <optgroup label="DEFG">
+                    <option value="dk">Denmark</option>
+                    <option value="eg">Egypt</option>
+                    <option value="ee">Estonia</option>
+                    <option value="fi">Finland</option>
+                    <option value="fr">France</option>
+                    <option value="de">Germany</option>
+                    <option value="gr">Greece</option>
+                </optgroup>
+                <optgroup label="HIJK">
+                    <option value="ht">Haiti</option>
+                    <option value="hk">Hong-Kong</option>
+                    <option value="is">Iceland</option>
+                    <option value="in">India</option>
+                    <option value="ie">Ireland</option>
+                    <option value="il">Israel</option>
+                    <option value="it">Italy</option>
+                    <option value="jm">Jamaica</option>
+                    <option value="tw">Japan</option>
+                    <option value="ke">Kenya</option>
+                    <option value="kw">Kuwait</option>
+                </optgroup>
+                <optgroup label="LMN">
+                    <option value="lt">Luthuania</option>
+                    <option value="lu">Luxembourt</option>
+                    <option value="mg">Madagascar</option>
+                    <option value="my">Malaysia</option>
+                    <option value="ml">Mali</option>
+                    <option value="mx">Mexico</option>
+                    <option value="mn">Mongolia</option>
+                    <option value="ma">Morocco</option>
+                    <option value="nl">Netherlands</option>
+                    <option value="nz">New Zealand</option>
+                    <option value="no">Norway</option>
+                </optgroup>
+                <optgroup label="PQS">
+                    <option value="pa">Panama</option>
+                    <option value="ph">Philippines</option>
+                    <option value="pl">Poland</option>
+                    <option value="pt">Portugal</option>
+                    <option value="qa">Qatar</option>
+                    <option value="sn">Senegal</option>
+                    <option value="za">South Africa</option>
+                    <option value="kp">South Korea</option>
+                    <option value="sp">Spain</option>
+                    <option value="se">Sweden</option>
+                </optgroup>
+                <optgroup label="TUZ">
+                    <option value="tw">Taiwan</option>
+                    <option value="tr">Turkey</option>
+                    <option value="ua">Ukraine</option>
+                    <option value="us">USA</option>
+                    <option value="zw">Zimbabwe</option>
+                </optgroup>
+            </select>
+            <br/><br/>
+
+            <!-- "checked" ça pré-sélectionne, mais on peut décocher après -->
+            <label for="choix">Your favorite fruit</label>
+                <input type="checkbox" value="wax apple" name="choix" checked> Wax Apple
+                <input type="checkbox" value="orange" name="choix"> Orange
+                <input type="checkbox" value="apple" name="choix"> Apple
+                <input type="checkbox" value="pear" name="choix"> Pear
+            <br/><br/>
+
+            <label for="civilite">Civilité</label>
+                <input type="radio" value="m" name="civilite" checked> Monsieur
+                <input type="radio" value="f" name="civilite" checked> Madame
+                <input type="radio" value="tr" name="civilite" checked> Transgenre
+                <input type="radio" value="nr" name="civilite" checked> Non-Renseigné
+            <br/><br/>
+
+            <!-- "textarea" n'est pas un input, donc pas de "value" -->
+            <label for="address">Address</label><br/>
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Your address"></textarea>
+            <br/><br/>
+
+            <!-- code postal pourrait commerncer par 0, on met le type=text -->
+            <!-- review REGEX !! -->
+            <label for="cp">Code Postal</label>
+            <input type="texte" id="cp" name="cp" pattern="[0-9]{5}" maxlength="5">
+            <br/><br/>
+
+            <!-- ************************************************************** -->
+            <!-- divers INPUT, ne fonctionnent pas sur tous les navigateurs -->
+            <label for="date">Birth Date</label>
+            <input type="date" id="date" name="date">
+            <br/><br/>
+
+            <label for="jauge">Jauge</label>
+            <input type="range" id="jauge" name="jauge" min="50" max="200" value="100">
+            <br/><br/>
+
+            <label for="color">Color</label>
+            <input type="color">
+            <br/><br/>
+
+            <!-- on pourrait uploader PLUSIEURS fichiers -->
+            <label for="avatar2">Avatar2</label>
+            <input type="file" id="avatar2" name="avatar2" multiple>
+            <br/><br/>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age">
+            <br/><br/>
+
+            <input type="hidden" id="cache" name="cache" value="78">
+
+
+            <!-- <input type="submit" name="subscription" value="Subscribe"> -->
+            <button>Subscribe</button>
+            <input type="reset" name="reset" value="reset">
+        </form>
+    </body>
+</html>
+
+

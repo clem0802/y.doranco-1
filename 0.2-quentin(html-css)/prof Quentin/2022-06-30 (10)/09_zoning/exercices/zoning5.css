@@ -1,0 +1,45 @@
+#conteneur{
+    width: 80%;
+    border: 2px solid black; 
+    margin: 0 auto;
+}
+
+header{
+    background-color: aquamarine;
+    height: 80px;
+}
+
+nav{
+    background-color: blueviolet;
+    height: 30px;
+}
+
+footer{
+    background-color: aquamarine;
+    height: 60px;
+}
+
+section{
+    height: 500px;
+    margin: 20px;
+    display: flex; /* display flex permet de dire au conteneur que ses éléments vont se mettre sur une ligne. */
+    flex-wrap: wrap; /* l'option wrap permet d'éviter que les éléments sortent du parents. S'il n'y a plus de place sur la ligne pour tous les éléments, ils auront automatiquement sur une nouvelle ligne. */
+}
+
+.item{
+    width: 50%;
+    height: 50%;
+}
+
+.item-a{
+    background-color: cadetblue;
+}
+.item-b{
+    background-color: orange;
+}
+.item-c{
+    background-color: lightblue;
+}
+.item-d{
+    background-color: rgb(77, 77, 219);
+}

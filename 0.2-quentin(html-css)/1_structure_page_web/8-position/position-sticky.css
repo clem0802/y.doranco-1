@@ -1,0 +1,25 @@
+
+/* ------------------------------------------------ */
+/* FIXED */
+/* nav {
+    background-color: cadetblue;
+    text-align: center;
+    padding: 30px 0;
+    position: fixed;
+    top: 30px;
+    width: 100%;
+} */
+
+
+/* ------------------------------------------------ */
+/* STICKY */
+/* faut préciser "à quel moment" le menu doit COLLER */
+/* ainsi, dès que le point LEFT-TOP touche au top:0, menu va rester là */
+/* ça peut contourner le petit pb de FIXED */
+nav {
+    background-color: cadetblue;
+    text-align: center;
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+}

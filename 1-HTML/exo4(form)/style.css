@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: bisque;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 12px;
+    width: 300px;
+}
+fieldset {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: none;
+}
+input {
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 3px;
+}
+p {
+    font-weight: bold;
+    color: rgb(46, 1, 79);
+}
+.sex, .hobby, .country {
+    background-color: rgb(235, 228, 228);
+    padding: 0 4% 4% 4%;
+    border-radius: 12px;
+}
+select {
+    border-radius: 4px;
+    margin-left: 10px;
+}
+textarea {
+    background-color: rgb(235, 228, 228);
+    border-radius: 8px;
+    border: none;
+}

@@ -1,0 +1,56 @@
+body{
+    background-color: orange;
+}
+
+/* Sélectionner par l'id */
+#paragraphe{
+    color: red;
+}
+
+/* Sélectionner par la classe */
+.paragraphe{
+    font-size: 16px;
+}
+
+div{
+    background-color: aqua;
+}
+
+.inline{
+    background-color: blueviolet;
+}
+
+/* Selecteur Multiple. 
+    Ici, tous les p et tous les h1 seront sélectionnés
+*/
+h1, p{ 
+    font-style: italic;
+}
+
+/* 
+    C'est possible de le faire également avec les classes
+    .inline, .paragraphe{
+
+    } 
+*/
+
+/* Ciblage précis. On indique que l'on cible les éléments situé dans une div. */
+div h2 {
+    font-weight: 900;
+}
+
+div .extrait{
+    text-align: center;
+}
+
+/* Il y a une différence entre les 2 écritures ci-dessous. */
+/* Ici je sélectionne la classe .inline à l'intérieur de l'élément a */
+a .inline{
+
+}
+
+/* Ici je sélectionne un élément a qui possède la classe inline */
+a.inline{
+    text-decoration: none;
+}
+

@@ -1,0 +1,18 @@
+
+Documentation officielle html et css
+MDN
+https://developer.mozilla.org/
+
+Validator W3C:
+html : https://validator.w3.org/
+css : https://jigsaw.w3.org/css-validator/
+
+Tester la compatibilité et la retrocompatibilité du code
+https://caniuse.com/
+
+Quelques sites interessants :
+https://openclassrooms.com/
+https://www.w3schools.com/
+
+App en ligne de retouche d'image
+https://pixlr.com/fr/

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Forms</title>
+    </head>
+
+<!-- 
+Un formulaire permet de:
+-interagir avec les internautes
+-récupérer des données et de les traiter
+-action=""  1er attribut html => URL du programme qui traitera des info soumises par le formulaire
+-method=""  2ème attribut html => faut préciser si je récupère les données pour les vérifier (GET ou POST) -->
+<!-- 
+-fieldset génère un encadrement groupé 
+-"checked" => COCHÉ PAR DÉFAUT, au moment de l'affichage
+-"name" => un attribut html, spécifie le nom pour un élément
+        => utilisé comme une référence lors de la soumissions des données
+        => sous forme de paramètre, côté serveur
+        => the nmae "hobby" has many different values (cf ci-dessous)
+        => hobby=cinema & hobby=sport & hobby=reading & hobby=music & hobby=painting
+-Alt+Click => to add sth simultaneously
+-DISABLED
+-MULTIPLE
+-READONLY
+-REQUIRED 
+-AUTOFOCUS (créé par REQUIRED)
+-->
+
+    <body>
+        <form action="" method="POST">
+            <!-- le input ci-dessous, type="HIDDEN", ne s'affiche pas sur page web -->
+            <input type="hidden" value="99" name="id_product">
+
+            <fieldset>
+                <label for="fullName">Your Full Name :</label>
+                <input type="text" id="fullName" placeholder="Your Full Name" name="fullName" maxlength="25" required />
+                <br />
+
+                <label for="phone">Your Phone :</label>
+                <input type="phone" id="phone" placeholder="Your Phone Number" name="phone" required />
+                <br />
+
+                <label for="email">Your Email :</label>
+                <input type="email" id="email" placeholder="Your Email" name="email" required />
+                <br />
+
+                <label for="password">Your Password :</label>
+                <input type="password" id="password" placeholder="Your Password" name="password" required />
+                <br />
+
+                <label for="date">Your Birthday :</label>
+                <input type="date" id="date" placeholder="Your Birthday" name="date" required />
+                <br />
+
+                <div class="sex">
+                    <p>Choose Your Sex :</p>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" value="m" name="sex" />
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" value="f" name="sex" />
+                </div><br />
+
+                <div class="hobby">
+                    <p>Choose your hobby :</p>
+                    <label for="cinema">Cinema</label>
+                    <input type="checkbox" id="cinema" value="cinema" name="hobby" />
+
+                    <label for="sport">Sport</label>
+                    <input type="checkbox" id="sport" value="sport" name="hobby" />
+
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="reading" value="reading" name="hobby" /><br />
+
+                    <label for="music">Music</label>
+                    <input type="checkbox" id="music" value="music" name="hobby" />
+
+                    <label for="painting">Painting</label>
+                    <input type="checkbox" id="painting" value="painting" name="hobby" />
+
+                    <label for="cooking">Cooking</label>
+                    <input type="checkbox" id="cooking" value="cooking" name="hobby" />
+                </div><br />
+
+                <div class="country">
+                    <p>Choose Your Country :</p>
+                    <label for="country">List of countries </label>
+                    <!-- <select name="country" multiple> -->
+                    <select name="country">
+                        <option value="" selected disabled>Choose :</option>
+                        <optgroup label="AB">
+                            <option value="dz">Algeria</option>
+                            <option value="ar">Argentina</option>
+                            <option value="au">Australia</option>
+                            <option value="at">Austria</option>
+                            <option value="bs">Bahamas</option>
+                            <option value="be">Belgium</option>
+                            <option value="bf">Burkina Faso</option>
+                        </optgroup>
+                        <optgroup label="C">
+                            <option value="kh">Cambodia</option>
+                            <option value="cm">Cammeroon</option>
+                            <option value="ca">Canada</option>
+                            <option value="cl">Chile</option>
+                            <option value="cn">China</option>
+                            <option value="co">Colombia</option>
+                            <option value="cr">Costa Rica</option>
+                            <option value="cu">Cuba</option>
+                            <option value="cz">Czechia</option>
+                        </optgroup>
+                        <optgroup label="DEFG">
+                            <option value="dk">Denmark</option>
+                            <option value="eg">Egypt</option>
+                            <option value="ee">Estonia</option>
+                            <option value="fi">Finland</option>
+                            <option value="fr">France</option>
+                            <option value="de">Germany</option>
+                            <option value="gr">Greece</option>
+                        </optgroup>
+                        <optgroup label="HIJK">
+                            <option value="ht">Haiti</option>
+                            <option value="hk">Hong-Kong</option>
+                            <option value="is">Iceland</option>
+                            <option value="in">India</option>
+                            <option value="ie">Ireland</option>
+                            <option value="il">Israel</option>
+                            <option value="it">Italy</option>
+                            <option value="jm">Jamaica</option>
+                            <option value="tw">Japan</option>
+                            <option value="ke">Kenya</option>
+                            <option value="kw">Kuwait</option>
+                        </optgroup>
+                        <optgroup label="LMN">
+                            <option value="lt">Luthuania</option>
+                            <option value="lu">Luxembourt</option>
+                            <option value="mg">Madagascar</option>
+                            <option value="my">Malaysia</option>
+                            <option value="ml">Mali</option>
+                            <option value="mx">Mexico</option>
+                            <option value="mn">Mongolia</option>
+                            <option value="ma">Morocco</option>
+                            <option value="nl">Netherlands</option>
+                            <option value="nz">New Zealand</option>
+                            <option value="no">Norway</option>
+                        </optgroup>
+                        <optgroup label="PQS">
+                            <option value="pa">Panama</option>
+                            <option value="ph">Philippines</option>
+                            <option value="pl">Poland</option>
+                            <option value="pt">Portugal</option>
+                            <option value="qa">Qatar</option>
+                            <option value="sn">Senegal</option>
+                            <option value="za">South Africa</option>
+                            <option value="kp">South Korea</option>
+                            <option value="sp">Spain</option>
+                            <option value="se">Sweden</option>
+                        </optgroup>
+                        <optgroup label="TUZ">
+                            <option value="tw">Taiwan</option>
+                            <option value="tr">Turkey</option>
+                            <option value="ua">Ukraine</option>
+                            <option value="us">USA</option>
+                            <option value="zw">Zimbabwe</option>
+                        </optgroup>
+                    </select>
+                </div><br />
+
+                <textarea name="textarea" id="" cols="30" rows="5" placeholder="Leave your message"></textarea><br />
+
+                <input type="submit" id="submit" value="Submit" />
+                <input type="reset" id="reset" value="Reset" />
+                <br />
+            </fieldset>
+        </form>
+    </body>
+</html>
