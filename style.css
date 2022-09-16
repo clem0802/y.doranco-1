@@ -1,0 +1,14 @@
+button{
+    height: 310px;
+    width: 310px;
+    font-size: 30px;
+}
+.blue {
+    background-color: blue;
+}
+.d-flex {
+    display:flex;
+}
+.green {
+    background-color: greenyellow;
+}
