@@ -46,7 +46,7 @@ nav li {
     margin: 0 10px;
 }
 nav > a {
-    /* BRUCE WAYNE est the only child "a" direct */
+    /* BRUCE WAYNE is the only child "a" direct */
     font-size: 25px;
 }
 .hamb {
@@ -342,6 +342,7 @@ footer > div:last-child {
         text-align: right;
     }
 }
+
 
 
 /* ---------------------------------------- */
