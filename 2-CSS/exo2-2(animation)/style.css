@@ -1,0 +1,337 @@
+body {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+hr {
+    position: relative;
+    display: block;
+    background: rgb(189, 185, 185);
+    height: 2px;
+    width: 100%;
+    margin-left: 0 auto;
+  }
+
+.animation {
+    margin: 50px 0 200px 0;
+}
+
+
+/* ------------------------------------ */
+/* animation-1 (rotate automatically 360deg, only once)*/
+div#animation-1 {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #2ecc71;
+    animation-name: animation1;
+    animation-duration: 4s;
+}
+@keyframes animation1 {
+    100% {transform: rotate(360deg);}
+}
+
+
+/* ------------------------------------ */
+/* animation-2 (square changes in 4 colors) */
+div#animation-2 {
+    width: 100px;
+    height: 100px;
+    background: #e74c3c;
+    animation-name: animation2;
+    animation-duration: 4s;
+}
+@keyframes animation2 {
+    0% {background: #e74c3c;}
+    25% {background: #f1c40f;}
+    50% {background: #2980b9;}
+    100% {background: #2ecc71;}
+  }
+
+
+/* ------------------------------------ */
+/* animation-3 (circle runs thru 4 corners and in 4 colors) */
+div#animation-3 {
+    width: 100px;
+    height: 100px;
+    background: #e74c3c;
+    animation-name: animation3;
+    animation-duration: 4s;
+    border-radius: 50%;
+    /* if taken off "position-relative", the circle will not move */
+    position: relative;
+}
+@keyframes animation3 {
+    0% {background: #e74c3c; left:0px; top:0px;}
+    25% {background: #f1c40f; left:200px; top:0px;}
+    50% {background: #2980b9; left:200px; top:200px;}
+    75% {background: #2980b9; left:0px; top:200px;}
+    100% {background: #27ae60; left:0px; top:0px;}
+}
+
+
+/* ------------------------------------ */
+/* animation-4 (background-position) */
+div#animation-4 {
+    width: 200px;
+    height: 200px;
+    background: url("img/green.png");
+    animation-name: animation4;
+    animation-duration: 4s;
+    animation-delay:-2s;
+    border-radius: 50%;
+    position: relative;
+}
+@keyframes animation4 {
+    0% {left:0px; top:0px;}
+    25% {left:200px; top:0px;}
+    50% {left:200px; top:200px;}
+    75% {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+
+
+/* ------------------------------------ */
+/* animation-5 (animation-iteration-count) */
+div#animation-5 {
+    width: 100px;
+    height: 100px;
+    background: #e74c3c;
+    animation-name: animation4;
+    animation-duration: 4s;
+    /* animation-iteration-count:infinite; */
+    position: relative;
+}
+@keyframes animation5 {
+    0% {left:0px; top:0px;}
+    25% {left:200px; top:0px;}
+    50% {left:200px; top:200px;}
+    75% {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+
+
+/* ------------------------------------ */
+/* animation-6 */
+#animation-6 {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    justify-content: space-between;
+}
+.inner-elem {
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    padding: 5px 0 0 5px;
+    /* margin: auto; */
+    animation: animation6 4s infinite;
+}
+div#timing-1 {
+    background: #1abc9c;
+    animation-timing-function: linear;
+}
+div#timing-2 {
+    background: #16a085;
+    animation-timing-function: ease;
+}
+div#timing-3 {
+    background: #2ecc71;
+    animation-timing-function: ease-in;
+}
+div#timing-4 {
+    background: #27ae60;
+    animation-timing-function: ease-out;
+}
+div#timing-5 {
+    background: #3498db;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animation6 {
+    from {width: 50px}
+    to {width: 600px;}
+}
+
+
+/* ------------------------------------ */
+/* animation-7 */
+.elem {
+    width: 100px;
+    height: 100px;
+    background: rgb(222, 89, 89);
+    position: relative;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 0 0 5px;
+    border: 1px solid rgb(82, 81, 81);
+    animation-name: animation7;
+    animation-duration: 3s;
+}
+div#direction-1 {
+    animation-direction: normal;
+}
+div#direction-2 {
+    animation-direction: reverse;
+}
+div#direction-3 {
+    animation-direction: alternate;
+} 
+div#direction-4 {
+    animation-direction: alternate-reverse;
+}
+@keyframes animation7 {
+    0% {background: #e74c3c;left:0px;}
+    25% {background: #f1c40f; left:200px;}
+    50% {background: #2980b9; left:200px;}
+    75% {background: #2980b9; left:0px;}
+    100% {background: #27ae60; left:0px;}
+}
+
+/* ------------------------------------ */
+/* animation-8 */
+.inner {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    color: white;
+    animation-name: animation8;
+    animation-duration: 3s;
+}
+div#fill-1 {
+    animation-fill-mode: none;
+}
+div#fill-2 {
+    animation-fill-mode: forwards;
+}
+div#fill-3 {
+    animation-fill-mode: backwards;
+} 
+div#fill-4 {
+    animation-fill-mode: both;
+}
+@keyframes animation8 {
+    0% {background: #e74c3c;left: 0px;}
+    25% {background: #f1c40f; left:200px;}
+    50% {background: #2980b9; left:200px;}
+    75% {background: #2980b9; left:0px;}
+    100% {background: #27ae60; left: 0px;}
+}
+
+/* ------------------------------------ */
+/* animation-9 */
+#animation-9{
+    width: 100px;
+    height: 100px;
+    background: red;
+    /* animation-name: animation9;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation: animation9 3s linear 2s infinite alternate;
+}
+@keyframes animation9 {
+    from {background: red;}
+    to {background: green;}
+}
+
+/* ------------------------------------ */
+/* animation-10 */
+#animation-10 { /*for the gray outline*/
+    width: 200px;
+    height: 40px;
+    border: 1px solid #7f8c8d;
+    padding: 1px;
+}
+#animation-10 .inner-content { /*for the gray content*/
+    width: 10%;
+    height: 100%;
+    background: #bdc3c7;
+    animation: animation10 2s linear forwards;
+}
+@keyframes animation10 { /*for the gray wave moveing forward*/
+    100% {width: 100%}
+}
+  
+
+/* ------------------------------------ */
+/* animation-11 */
+#animation-11 {
+    border: 16px solid #ecf0f1;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-top: 16px solid #2c3e50;
+    animation: animation11 1s linear infinite; /*infinite = running all the time*/ 
+}
+@keyframes animation11 { /*to make the dark part be moving*/
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* ------------------------------------ */
+/* animation-12 */
+#animation-12 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 12px;
+    transition: width 2s, height 2s, transform 2s;
+}
+#animation-12:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+
+/* ------------------------------------ */
+/* animation-13 (clock) */
+.clock {
+    border-radius: 50%;
+    background: url("img/clock.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 150px;
+    width: 150px;
+    padding-bottom: 30%;
+    position: relative;
+}
+.h-container, .m-container, .s-container {
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+.hours, .minutes, .seconds {
+    background: black;
+    height: 7%;
+    width: 2%;
+    left: 49%; 
+    top: 43%;
+    position: absolute;
+}
+.h-container {
+    /* animation: animation12 42300s infinite linear; */
+    animation: animation13 10s infinite linear;
+}
+.m-container {
+    /* animation: animation12 42300s infinite linear; */
+    animation: animation13 5s infinite linear;
+}
+.s-container {
+    /* animation: animation12 42300s infinite linear; */
+    animation: animation13 1s infinite linear;
+}
+@keyframes animation13 {
+    100% {transform: rotate(360deg);}
+}
