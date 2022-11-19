@@ -267,7 +267,72 @@ footer .footer-contact-part .icon {
 /* --------------------------- */
 /* RWD - Responsive Web Design */
 /* Extra small devices (phones, 600px and below */
+@media only screen and (max-width: 600px){
+}
+
+/* --------------------------- */
 /* Small devices (tablets, large phones, 600px and above */
+@media only screen and (min-width: 600px){
+}
+@media only screen and (max-width: 767px){
+    .w-50, .w-30, .w-80{
+        width: 100%;
+    }
+    /*--------------- */
+    /* HEADER */
+    nav{
+        display: none;
+    }
+    .menu-burger{
+        display: block;
+    }
+    /*--------------- */
+    /* SECTION 1 */
+    #section-1 img {
+        width: 100%;
+    }
+    /*--------------- */
+    /* SECTION 4 */
+    .card {
+        margin: 1rem 0;
+    }
+    /*--------------- */
+    /* FOOTER */
+    footer .link-part{
+        width: 100%;
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+    }
+    footer .link-part > ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .network {
+        width: 100%;
+        align-items: center;
+    }
+    
+}
+
+
+/* --------------------------- */
 /* Medium devices (landscape tablets, 768px and above */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .w-30{
+        width: 50%;
+    }
+}
+
+
+/* --------------------------- */
 /* Large devices (laptops/desktops, 992px and above */
+@media only screen and (min-width: 992px) {
+}
+
+
+/* --------------------------- */
 /* Extra large devices (large laptops and desktops, 1200px and up */
+@media only screen and (min-width: 1200px) {
+}
